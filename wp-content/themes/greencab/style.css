@@ -1,0 +1,318 @@
+@charset "utf-8";
+/*
+Theme Name: GreenCab Pizza Theme
+Author: Jomarie De Jesus
+Version: 1.0
+*/
+body{
+	background:url(images/header.jpg) no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#top-content{
+	background:rgba(0,0,0,0.5);
+	border-top:5px solid #158000;
+	height:70px;
+	margin-bottom:50px;
+}
+#menu-main-menu{
+    margin: 0;
+    padding: 0;
+}
+#menu-main-menu li{
+	display:inline-block;
+	height:100%;
+}
+#menu-main-menu li.current-menu-item{
+	border-bottom:3px solid #158000;
+}
+
+#menu-main-menu li a{
+	color:#DBDBDB;
+	padding:0px 15px;
+	display:block;
+	height:100%;
+	line-height:70px;
+	text-decoration:none;
+}
+#menu-main-menu li:not(.current-menu-item) > a:hover{
+	border-bottom:3px solid #158000;
+}
+
+#menu-main-menu li .sub-menu{
+	position:absolute;
+	z-index:5;
+	display:none;
+	padding:0;
+}
+#menu-main-menu li .sub-menu li{
+	display:list-item;
+	list-style:none;
+}
+#menu-main-menu li .sub-menu li a{
+	text-align:left;
+	padding:0px 20px;
+	height:100%;
+	width:200px;
+}
+#menu-main-menu li .sub-menu li a{
+	border-radius:5px;
+}
+#menu-main-menu li .sub-menu li:last-child{
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.menu-item-has-children > a:after{
+	content: ' v ';
+	font-size:10px;
+}
+
+#mainNav{
+	float:right;
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #cccccc;
+  border-radius: 1px;
+}
+#the-logo{
+	background:url(images/gcp-logo.png) no-repeat;
+	background-size:contain;
+	height:100%;
+	color:#9eaa94;
+	text-align:center;
+}
+
+
+
+.ribbon-wrapper-green {
+  width: 210px;
+  height: 180px;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  z-index:1;
+}
+
+.ribbon-green {
+  font: bold 15px Sans-Serif;
+  color: #333;
+  text-align: center;
+  text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  top:55;
+  position: relative;
+  width:280px;
+  padding:10px;
+  background-color: #BFDC7A;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#BFDC7A), to(#8EBF45)); 
+  background-image: -webkit-linear-gradient(top, #BFDC7A, #8EBF45); 
+  background-image:    -moz-linear-gradient(top, #BFDC7A, #8EBF45); 
+  background-image:     -ms-linear-gradient(top, #BFDC7A, #8EBF45); 
+  background-image:      -o-linear-gradient(top, #BFDC7A, #8EBF45); 
+  color: #6a6340;
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+
+.ribbon-green:before, .ribbon-green:after {
+  content: "";
+  border-top:   3px solid #6e8900;   
+  border-left:  3px solid transparent;
+  border-right: 3px solid transparent;
+  position:absolute;
+  bottom: -3px;
+}
+
+.ribbon-green:before {
+  left: 0;
+}
+.ribbon-green:after {
+  right: 0;
+}
+
+.featured-product-list{
+	overflow-y: hidden;
+}
+
+#event_photo_slider img{
+	margin:0px auto;
+}
+.featured-product-list ul{
+	padding:0;	
+}
+.featured-product-list ul li{
+	margin:15px auto;
+	list-style:none;
+}
+.featured-product-list img{
+	margin:0px auto;
+}
+
+
+
+/* line 14, ../sass/jQuery.verticalCarousel.scss */
+
+/* line 16, ../sass/jQuery.verticalCarousel.scss */
+.vc_goUp.isDisabled, .vc_goDown.isDisabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* line 21, ../sass/jQuery.verticalCarousel.scss */
+.vc_container {
+  overflow: hidden;
+  -moz-transition: height 0.2s ease-in;
+  -o-transition: height 0.2s ease-in;
+  -webkit-transition: height 0.2s ease-in;
+  transition: height 0.2s ease-in;
+}
+
+/* line 25, ../sass/jQuery.verticalCarousel.scss */
+.vc_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -moz-transition: -moz-transform 0.2s ease-in;
+  -o-transition: -o-transform 0.2s ease-in;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+}
+.vscroll-controls{
+	margin-top:50%;	
+}
+
+#cab-locator{
+	margin-top:30px;
+	min-height:200px;
+	background:#FFF;
+}
+.nopadding{
+	padding:0;		
+}
+#cab-locator-form input[type=text]{
+	width:100%;
+	font-size:18px;
+	padding:5px 10px;
+	border:thin solid #9C9C9C;
+	border-radius:5px;
+}
+#cab-locator-form label{
+	font-size:18px;
+	float:right;
+	margin:5px auto;
+}
+#cab-locator-form input[type=submit]{
+	width:100%;
+	font-size:18px;
+	padding:5px;
+	border:thin solid #9C9C9C;
+	border-radius:5px;
+	background:#158000;
+	border-bottom:5px solid #189400;
+	color:#FFF;
+}
+#cab-locator-form input[type=submit]:hover{
+	background:#1AA200;
+	border-bottom:5px solid #158000;
+	color:#FFF;
+}
+#cab-locator-form input[type=submit]:active{
+	background:#158000;
+	border-bottom:5px solid #189400;
+	color:#E4E4E4;
+}
+footer.page-footer{
+	background:#494949;
+	background-color:#272727;
+	margin-top:0;
+	color:#FFF;
+	padding:30px 0px;
+}
+#map{
+	height:400px;	
+}
+.gm-hr-style1{ 
+	border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(73, 73, 73, 0.3);
+}
+.gm-hr-style2{ 
+	border: 0;
+    height: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(73, 73, 73, 0.6);
+}
+.gm-hr-style3{
+	border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));	
+}
+.sometext-and-btn ul li{
+	text-align:center;
+	list-style:none;
+	margin:0px auto;
+}
+.social-section ul{
+	text-align:center;	
+}
+.social-section ul li{
+	list-style:none;
+	text-align:center;
+	display: inline;	
+}
+.footer-copyright{
+	text-align:center;	
+}
+
+@media screen and (max-width: 768px) {
+#map{
+	height:250px;	
+}
+#cab-locator-form label{
+	float:left;
+}
+#cab-locator-form input[type=submit]{
+	margin-top:10px;
+}
+#menu-main-menu{
+	position:absolute;
+	z-index:1000;
+	width:100%;
+	padding:0;
+	margin:0;
+}
+#menu-main-menu li{
+	width:100%;
+	height:50px;
+}
+#mainNav{
+	width:100%;
+	padding:0;
+}
+#menu-main-menu li .sub-menu{
+	width:80%;
+	margin-left:50px;
+	box-shadow:0px 0px 3px rgba(0,0,0,0.5);
+}
+#menu-main-menu li .sub-menu li a{
+	width:100%;
+}
+#the-logo{
+	width:50%;
+	float:left;
+}
+
+
+}

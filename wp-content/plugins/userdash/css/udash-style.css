@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+#main-dash-wrap{
+	background:#FFF;
+	border-top:5px solid #158000;
+	box-shadow:0px 0px 5px rgba(0,0,0,0.5);
+	margin:20px auto;
+	min-height:300px;
+	padding:20px;
+}
+#dash-side-nav{
+	border-right:thin solid rgba(0,0,0,0.5);
+}
+#add-new-user{	
+}
+#add-new-user label,#edit-user label,
+.gm-field-label{
+	border-bottom-left-radius:5px;
+	border-top-left-radius:5px;
+	background:#C7C7C7;
+	font-weight:normal;
+	border:none;
+	padding:8px 10px;
+	font-size:15px;
+	width:20%;
+	color:#555555;
+}
+#add-new-user input[type=text],#add-new-user input[type=password],
+#edit-user input[type=text],#edit-user input[type=password],
+#add-cab-loc input[type=text],#add-cab-loc input[type=password],
+#edit-cab-loc input[type=text],#edit-cab-loc input[type=password],
+#gen-sales-rep input[type=text],
+#add-inv-supply input[type=text]{
+	border-bottom-right-radius:3px;
+	border-top-right-radius:3px;
+	font-weight:normal;
+	border:thin solid #C7C7C7;
+	padding:8px 10px;
+	width:100%;
+}
+#add-new-user select,
+#edit-user select,
+.gm-field-select{
+	border-bottom-right-radius:3px;
+	border-top-right-radius:3px;
+	font-weight:normal;
+	border:thin solid #C7C7C7;
+	padding:8px 10px;
+	margin-left:0;
+}
+#add-new-user-wrap{
+	
+}
+#password-form{
+	display:none;	
+}
+
+#change-pass-btn{
+	width:65%;
+	margin-bottom:20px;
+}
+#add-new-user .input-group,
+#edit-user .input-group,
+#add-inventory-record .input-group,
+#add-cab-loc .input-group,
+#edit-cab-loc .input-group,
+#gen-sales-rep .input-group,
+.gm-input-group-1,
+#add-inv-supply .input-group,
+#the-cart .input-group{
+	margin:5px 0px;
+	width:100%;
+}
+#add-new-user input[type=submit],
+#edit-user input[type=submit],
+#add-inventory-record input[type=submit],
+#add-cab-loc input[type=submit],
+#edit-cab-loc input[type=submit],
+#gen-sales-rep input[type=submit],
+.gm-submit-btn-1,
+#add-inv-supply input[type=submit]{
+	border:none;
+}
+#add-new-user .form-group,
+#edit-user .form-group,
+#add-inventory-record .form-group,
+#add-cab-loc .form-group,
+#edit-cab-loc .form-group,
+#gen-sales-rep .form-group,
+.gm-form-group-1,
+#add-inv-supply .form-group,
+#the-cart .form-group{
+	width:100%;
+}
+#add-new-user .input-group-addon,
+#edit-user .input-group-addon,
+#add-inventory-record .input-group-addon,
+#add-cab-loc .input-group-addon,
+#edit-cab-loc .input-group-addon,
+#gen-sales-rep .input-group-addon,
+#add-inv-supply .input-group-addon,
+.gm-group-addon-1,
+#the-cart .input-group-addon{
+	width:35%;
+}
+.table th{
+	text-align:center;	
+}
+.table {
+    table-layout:fixed;
+}
+.table td{
+	text-align:center;
+	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;	
+}
+.table td.money{
+	text-align:right;	
+}
+
+
+
+
